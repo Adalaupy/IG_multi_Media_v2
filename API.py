@@ -22,7 +22,7 @@ FrontEnd_URL = os.environ.get('FE_URL')
 
 
 origins = [
-    f"http://{FrontEnd_URL}",
+    f"https://{FrontEnd_URL}",
     FrontEnd_URL
 ]
 
@@ -145,8 +145,8 @@ async def final_post(PostMedia:dict) -> dict:
 
 
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
 
 
-    # "API" = file name
-    uvicorn.run("API:app", host="127.0.0.1", port=8000, reload=True)
+#     # "API" = file name
+#     uvicorn.run("API:app", host="127.0.0.1", port=8000, reload=True)
