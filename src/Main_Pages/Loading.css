@@ -1,0 +1,57 @@
+.loading-main {
+    z-index: 1000;
+    margin: 0;
+    position: sticky;
+    top: 50%;
+}
+
+
+.loading-ring {
+
+    display: inline-block;
+    position: relative;
+
+}
+
+
+.ring {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+
+    width: 50px;
+    height: 50px;
+    border: 8px solid black;
+
+    border-radius: 50%;
+    margin: 8px;
+    animation: loading-ring--animate 1s cubic-bezier(.17, .67, .83, .67) infinite;
+    border-color: #e20909 transparent transparent transparent
+}
+
+
+
+.ring:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.ring:nth-child(2) {
+    animation-delay: -0.35s;
+}
+
+.ring:nth-child(3) {
+    animation-delay: -0.25s;
+}
+
+
+
+
+@keyframes loading-ring--animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

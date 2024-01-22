@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+
+
+.content-main {
+    font-family: 'Noto Sans HK', sans-serif;
+    font-size: calc(var(--fontSize) * 1.4);
+    display: grid;
+    place-items: center;
+    justify-content: center;
+
+    --inputWidth: 500px;
+    --fontSize: 15px;
+}
+
+
+.forInput,
+.forPreview {
+    padding: 50px;
+    display: grid;
+    place-items: center;
+    gap: 50px;
+}
+
+
+.input-box {
+    display: grid;
+    gap: 10px;
+}
+
+
+
+
+.rti--container,
+.text-input,
+.file-input {
+    width: var(--inputWidth);
+    font-size: calc(var(--fontSize) * 0.9);
+    border-radius: 20px;
+    padding: 15px;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+}
+
+
+
+
+.file-input {
+    border: 1px solid #000;
+    width: var(--inputWidth);
+    font-size: var(--fontSize);
+}
+
+
+
+input[type="file"]::file-selector-button {
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-media-note-box {
+    text-align: left;
+    font-size: calc(var(--fontSize) * 0.8);
+    display: grid;
+    gap: 5px;
+}
+
+
+.img-preview-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+
+.img-preview-item {
+
+    width: calc(var(--inputWidth) * 0.8);
+    display: grid;
+    border: 1px solid #42424241;
+    border-radius: 15px;
+    margin-top: 50px;
+    place-items: center;
+    align-items: end;
+    padding: 5px;
+    font-size: var(--fontSize);
+    background-color: rgba(246, 248, 250, 0.575);
+}
+
+#input-tag-people-box,
+#input-tag-people-box>.rti--container,
+#input-tag-people-box>.rti--container>.rti--input {
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    z-index: 1;
+    position: absolute;
+
+}
+
+
+
+.tag-people-label {
+    background-color: rgb(67, 68, 67);
+    padding: 5px 20px;
+    color: azure;
+    border-radius: 30px;
+    font-size: 15px;
+
+}
+
+
+
+.media-item {
+    max-width: 100%;
+    max-height: 400px;
+}
+
+
+
+
+.Preview-btn {
+
+    margin: 50px 0;
+    font-size: var(--fontSize);
+    background-color: transparent;
+    padding: 9px 20px;
+    box-shadow: 3px 3px 5px black, -3px -2px 5px black;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        scale: 1.2;
+        background-color: rgb(179, 230, 230);
+    }
+
+}
+
+.tag-people-label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    z-index: 100;
+}
+
+
+
+.delete-btn {
+    cursor: pointer;
+
+    &:hover {
+        scale: 1.2;
+        color: rgb(0, 102, 255);
+    }
+}
+
+
+
+
+
+@media (max-width:600px) {
+
+    .content-main {
+        --inputWidth: 400px;
+        --fontSize: 13px;
+    }
+}
+
+
+
+@media (max-width:500px) {
+
+    .content-main {
+        --inputWidth: 300px;
+        --fontSize: 11px;
+    }
+}
+
+
+@media (max-width:400px) {
+
+    .content-main {
+        --inputWidth: 200px;
+        --fontSize: 10px;
+    }
+}

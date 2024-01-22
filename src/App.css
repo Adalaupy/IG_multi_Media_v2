@@ -1,0 +1,6 @@
+#root {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  background: linear-gradient(to left, #3fa4a662, #f8deed7b, #5917923f);
+}

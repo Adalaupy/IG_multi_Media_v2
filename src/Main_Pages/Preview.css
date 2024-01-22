@@ -1,0 +1,167 @@
+.preview-main {
+    position: absolute;
+    background-color: rgba(132, 132, 132, 0.77);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+
+
+    display: grid;
+    place-items: center;
+
+    --phone-width: 417px;
+    --phone-height: 800px;
+
+}
+
+
+img,
+video {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.phone-img-box {
+
+
+    position: sticky;
+    top: calc((100vh - var(--phone-height))/2);
+    bottom: calc((100vh - var(--phone-height))/2);
+    background-color: rgb(255, 255, 255);
+    width: calc(var(--phone-width) - 33px);
+    height: calc(var(--phone-height) - 45px);
+    border-radius: 20px;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -23px);
+        width: var(--phone-width);
+        height: var(--phone-height);
+        background: url('../asset/phone.png') 0 0 no-repeat;
+        background-size: contain;
+        z-index: -100;
+    }
+
+}
+
+.phone-content {
+    margin: 38px 9px;
+}
+
+
+.photo-box {
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+
+
+.arrow-item {
+    cursor: pointer;
+    z-index: 10000;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+
+.post-text {
+    z-index: 10000;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    vertical-align: top;
+    margin: 5px 0 0 10px;
+
+
+    overflow-Y: scroll;
+
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: rgb(165, 154, 154);
+        border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar {
+        width: 6px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #1575fb;
+        border-radius: 20px;
+    }
+}
+
+
+
+.Acct {
+    font-size: medium;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.hashtag {
+    margin-top: 10px;
+    font-style: italic;
+    color: #1575fb;
+}
+
+
+
+
+
+.submit-box {
+
+    position: sticky;
+    bottom: 25px;
+    top: calc(100vh - 70px);
+    height: 40px;
+    align-items: center;
+
+
+    box-shadow: 3px 3px 5px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--fontSize);
+    background-color: rgb(25, 148, 231);
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    padding: 0 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        scale: 1.2;
+        background-color: rgb(235, 12, 138);
+    }
+}
+
+
+
+
+@media (max-width:500px) {
+
+    .phone-img-box {
+        scale: 0.6;
+    }
+}
