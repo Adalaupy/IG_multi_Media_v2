@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+ import React, { useEffect } from 'react'
 import './Login.css'
 import { useVariableListContext } from '../contexts/VariableListProvider'
 import { useNavigate } from 'react-router-dom'
@@ -65,7 +65,13 @@ const Login = () => {
 
 
 
-                    <div id='login-btn' onClick={(e) => Handle_Login(e)} >
+                    <div id='login-btn' 
+                        onClick={(e) => Handle_Login(e)} 
+                        onKeyDown={(e) => {
+                            if (e.key == "Enter") {
+                               Handle_Login(e) 
+                            }
+                    }}>
                         Login
                     </div>
 
