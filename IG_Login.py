@@ -39,14 +39,13 @@ def Login(User, Password):
     try:
 
         cl.login(User, Password)
-        GetSessionJson = cl.get_settings()
-
-        
+        GetSessionJson = cl.get_settings()        
 
         Login_Status = 1
 
     except:
-
+        
+        GetSessionJson = None
         Login_Status = 0
     
 
