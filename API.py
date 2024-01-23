@@ -20,7 +20,7 @@ load_dotenv()
 
 FrontEnd_URL = os.environ.get('FE_URL')
 FrontEnd_URL2 = os.environ.get('FE_URL2')
-FrontEnd_Deploy_URL = os.environ.get('FE_Deploy_URL')
+FrontEnd_Deploy_URL = os.environ.get('FE_DEPLOY_URL')
 
 
 
