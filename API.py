@@ -47,6 +47,11 @@ Return_Media = []
 
 
 
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+
+
 
 @app.post("/login-session")
 async def Login_Session(SessionJson:dict) -> dict:  
