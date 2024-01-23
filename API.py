@@ -31,6 +31,7 @@ origins = [
 ]
 
 
+print(origins)
 
 app.add_middleware(
     CORSMiddleware,
