@@ -109,8 +109,12 @@ export const Main_API_Functions = () => {
 
             .then(res => res.json())
             .then(data => {
-                setisLoginSuccess(data['login_status'])
-                localStorage.setItem('Ins_SessionJson', JSON.stringify(data['sessionJson']))
+
+                if(data['sessionJson'] != null){
+                
+                    setisLoginSuccess(data['login_status'])
+                    localStorage.setItem('Ins_SessionJson', JSON.stringify(data['sessionJson']))
+                }
             })
             .catch(() => {
                 alert('Login Fail')
