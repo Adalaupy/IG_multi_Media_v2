@@ -43,8 +43,9 @@ def Login(User, Password):
 
         Login_Status = 1
 
-    except:
-        
+    except Exception as e:
+
+        print(e)
         GetSessionJson = None
         Login_Status = 0
     
