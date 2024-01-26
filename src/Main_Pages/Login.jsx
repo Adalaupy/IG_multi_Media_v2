@@ -10,7 +10,7 @@ const Login = () => {
 
 
 
-    const { UserName, Password, setUserName, setPassword, isLoginSuccess, setisLoginSuccess } = useVariableListContext()
+    const { UserName, Password, setUserName, setPassword, isLoginSuccess, setisLoginSuccess, BASE } = useVariableListContext()
     const navigate = useNavigate()
 
 
@@ -23,7 +23,7 @@ const Login = () => {
 
         if (isLoginSuccess == 1) {
 
-            navigate('/content')
+            navigate({`${BASE}content`})
             setisLoginSuccess(0)
 
         }
