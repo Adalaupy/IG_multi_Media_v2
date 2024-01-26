@@ -13,8 +13,9 @@ const Login = () => {
     const { UserName, Password, setUserName, setPassword, isLoginSuccess, setisLoginSuccess, BASE } = useVariableListContext()
     const navigate = useNavigate()
 
-
+    
     const { Handle_Login } = Main_Handle_Event()
+    const BaseContent = BASE + 'content'
 
 
 
@@ -23,7 +24,7 @@ const Login = () => {
 
         if (isLoginSuccess == 1) {
 
-            navigate({`${BASE}content`})
+            navigate(BaseContent)
             setisLoginSuccess(0)
 
         }
