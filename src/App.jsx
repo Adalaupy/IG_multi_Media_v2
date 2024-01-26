@@ -36,7 +36,7 @@ function App() {
 
     if (isSessions === 0) {
 
-      navigate(Base_Login)
+      navigate(BASE)
 
     }
 
