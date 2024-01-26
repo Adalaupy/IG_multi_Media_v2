@@ -28,7 +28,7 @@ origins = [
     f"http://{FrontEnd_URL}",
     FrontEnd_URL,
     FrontEnd_Deploy_URL,
-    f"http://{FrontEnd_Deploy_URL}"
+    f"https://{FrontEnd_Deploy_URL}"
 ]
 
 
