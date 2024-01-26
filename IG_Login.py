@@ -50,7 +50,6 @@ def Login(User, Password):
         Login_Status = 0
     
 
-    print(GetSessionJson)
 
 
     return Login_Status,GetSessionJson,cl
