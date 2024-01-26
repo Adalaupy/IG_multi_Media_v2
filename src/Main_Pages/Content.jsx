@@ -119,7 +119,7 @@ const Content = () => {
                     <div className="upload-media-note-box">
                         <div className="upload-media-note">* <span style={{ fontStyle: 'italic' }}>Instagrapi</span> allow Tagging Users for the <span style={{ fontWeight: 'bold' }}>1st</span> Image/Video</div>
                         <div className="upload-media-note">* Click on the below (1st) Media to tag User and Press "Enter" to save</div>
-                        <div className="upload-media-note">* Drag and Down the Media to re-arrange Order</div>
+                        <div className="upload-media-note">* Drag and drop the Media to re-arrange Order</div>
                     </div>
 
                 </div>
